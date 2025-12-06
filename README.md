@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+Activity Listing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An interactive learning activities dashboard built using Expo + React Native Web, inspired by modern LMS UI layouts. It allows users to view, filter, and interact with learning activities like online classes, quizzes, assignments, and discussions — with light/dark theme support.
 
-## Get started
+Features
 
-1. Install dependencies
+Beautiful and responsive UI for Web & Android (Expo)
 
-   ```bash
-   npm install
-   ```
+Category-based activity filtering
 
-2. Start the app
+Interactive action buttons per activity (Join / Start / Review / Continue)
 
-   ```bash
-   npx expo start
-   ```
+Light/Dark mode toggle 
 
-In the output, you'll find options to open the app in a
+Mock data-driven structure (ready for real API integration)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Modular + scalable architecture
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Tech Stack
+Technology	Purpose
+Expo (React Native)	Single codebase for Web + Android
+React Native Web	Render React Native UI on the browser
+Context API	Centralized theme management
+FlatList & RN Components	Efficient UI rendering across platforms
+Tech Choices & Tradeoffs
+Choice	Reason	Tradeoff
+Expo	Fast development & multi-platform builds	Slightly heavier bundle sizes
+React Native Web	UI reuse across Android + Web	Some web-specific styling limitations
+Context API for theme	Simplicity — no extra deps	Not ideal for very large-scale state
+Mock data	Quick prototyping	No real backend functionality yet
+Pure JS styling	Works across platforms	No CSS/HTML flexibility on web
+Project Structure
+activity-listing-expo/
+ ├── app/
+ │    ├── index.js
+ │    ├── screens/
+ │    │     └── ActivityListing.js
+ │    ├── components/
+ │    │     ├── ActivityCard.js
+ │    │     ├── Filters.js
+ │    │     └── Header.js
+ ├── data/
+ │    └── activities.js
+ ├── theme.js
+ ├── package.json
 
-## Get a fresh project
+▶️ Running the App
+1️⃣ Install dependencies
+npm install
 
-When you're ready, run:
+2️⃣ Run on Web 🌐
+npx expo start --web
 
-```bash
-npm run reset-project
-```
+3️⃣ Run on Android 📱
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+(Requires Expo Go app installed on phone)
 
-## Learn more
+npx expo start
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Then scan the QR code from your Android device.
