@@ -2,7 +2,7 @@
 
 An interactive learning activities dashboard built using Expo + React Native Web, inspired by modern LMS UI layouts. It allows users to view, filter, and interact with learning activities like online classes, quizzes, assignments, and discussions — with light/dark theme support.
 
-🚀 Features
+ Features
 
 Beautiful and responsive UI for Web & Android (Expo)
 
@@ -10,19 +10,20 @@ Category-based activity filtering
 
 Interactive action buttons per activity (Join / Start / Review / Continue)
 
-Light/Dark mode toggle 🌙
+Light/Dark mode toggle 
 
 Mock data-driven structure (ready for real API integration)
 
 Modular + scalable architecture
 
-🧠 Tech Stack
+Tech Stack
 Technology	Purpose
 Expo (React Native)	Single codebase for Web + Android
 React Native Web	Render React Native UI on the browser
 Context API	Centralized theme management
-FlatList & RN Components	Efficient UI rendering across platforms
-🔍 Tech Choices & Tradeoffs
+FlatList & RN Components	Efficient UI rendering across platforms 
+
+Tech Choices & Tradeoffs
 Choice	Reason	Tradeoff
 Expo	Fast development & multi-platform builds	Slightly heavier bundle sizes
 React Native Web	UI reuse across Android + Web	Some web-specific styling limitations
